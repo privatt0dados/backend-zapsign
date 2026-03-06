@@ -10,7 +10,7 @@ import unicodedata
 # ==================================================
 
 OUTPUT_DIR = "app/storage/gerados"
-os.makedirs(OUTPUT_DIR, exist_ok=True)
+os.makedirs(OUTPUT_DIR, exist_ok=True)  # garante que existe
 
 MARGEM_X = 50
 MARGEM_Y = 50

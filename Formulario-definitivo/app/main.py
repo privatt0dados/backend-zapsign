@@ -6,8 +6,14 @@ import unicodedata
 import re 
 import os 
 
-app = FastAPI()
+import os
+import uvicorn
 
+if __name__ == "__main__":
+    PORT = int(os.environ.get("PORT", 8000))  # pega porta do Render
+    uvicorn.run("app.main:app", host="0.0.0.0", port=PORT)
+
+app = FastAPI()
 
 # ==========================
 # UTILIDADES

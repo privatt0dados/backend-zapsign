@@ -3,6 +3,7 @@ import requests
 import os
 
 router = APIRouter()
+
 ASSINADOS_DIR = "app/storage/assinados"
 os.makedirs(ASSINADOS_DIR, exist_ok=True)
 
